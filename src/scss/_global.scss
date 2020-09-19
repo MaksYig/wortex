@@ -28,9 +28,9 @@ p {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
-  color:#fff;
+  color: #fff;
   font-weight: 400;
   background-color: #000;
 }
@@ -49,7 +49,7 @@ body {
 /* Header popup start */
 
 .popup {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -57,10 +57,9 @@ body {
   bottom: 0;
   overflow: hidden;
   z-index: 999;
-  &-container{
-
+  &-container {
   }
-  &-content{
+  &-content {
     max-width: 445px;
     margin: 120px auto 0 auto;
     background: rgba(14, 13, 23, 0.8);
@@ -71,7 +70,7 @@ body {
     justify-content: center;
     padding: 24px 56px 21px 51px;
   }
-  &-text{
+  &-text {
     max-width: 350px;
     text-align: center;
     color: #fff;
@@ -80,7 +79,7 @@ body {
     font-weight: 700;
     margin-bottom: 22px;
   }
-  &-subtext{
+  &-subtext {
     max-width: 350px;
     text-align: center;
     color: #fff;
@@ -88,12 +87,12 @@ body {
     line-height: 33px;
     margin-bottom: 15px;
   }
-  &__input{
+  &__input {
     position: relative;
-    input{
+    input {
       height: 46px;
       max-width: 340px;
-      background: #0E0D17;
+      background: #0e0d17;
       border-radius: 5px;
       color: #fff;
       padding-left: 60px;
@@ -101,13 +100,13 @@ body {
       padding-right: 20px;
       margin-bottom: 15px;
     }
-    img{
+    img {
       position: absolute;
       top: 9px;
       left: 10px;
     }
   }
-  .btn{
+  .btn {
     color: #fff;
     font-size: 26px;
     line-height: 35px;
@@ -123,3 +122,6 @@ body {
   }
 }
 /* Header popup end */
+
+
+
