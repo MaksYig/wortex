@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+// sticky footer start
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+// sticky footer end
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color:#fff;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container__big {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header popup start */
+
+.popup {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 999;
+  &-container{
+
+  }
+  &-content{
+    max-width: 445px;
+    margin: 120px auto 0 auto;
+    background: rgba(14, 13, 23, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 56px 21px 51px;
+  }
+  &-text{
+    max-width: 350px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  &-subtext{
+    max-width: 350px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
+  &__input{
+    position: relative;
+    input{
+      height: 46px;
+      width: 340px;
+      background: #0E0D17;
+      border-radius: 5px;
+      color: #fff;
+      padding-left: 60px;
+      line-height: 25px;
+      padding-right: 20px;
+      margin-bottom: 15px;
+    }
+    img{
+      position: absolute;
+      top: 9px;
+      left: 10px;
+    }
+  }
+  .btn{
+    color: #fff;
+    font-size: 26px;
+    line-height: 35px;
+    background-color: $green;
+    font-weight: 600;
+    cursor: pointer;
+    height: 66px;
+    width: 339px;
+    text-align: center;
+    border: none;
+    // padding: 15px 46px;
+    border-radius: 5px;
+  }
+}
+/* Header popup end */

@@ -1,0 +1,16 @@
+/* Media request */
+@media (max-width: 1000px) {
+  .header__chat-box-wrapper {
+    display: none;
+  }
+  .header__phone {
+    font-size: 33px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 740px) {
+  .header__logo-text {
+    display: none;
+  }
+}
+
