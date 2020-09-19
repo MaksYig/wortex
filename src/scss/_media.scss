@@ -1,6 +1,26 @@
-/* Media request */
-@media (max-width: 1000px) {
-  .header__chat-box-wrapper {
+@media(max-width:1205px){
+  .vacancy__info-box-row{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .vacancy__info-box-subinfo.terms,
+  .vacancy__info-box-subinfo.food {
+   margin-right: 0;
+}
+.vacancy__info-box-subinfo{
+  margin-bottom: 15px;
+}
+}
+
+@media (max-width: 1170px) {
+  .header__content-box {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header__chat-box {
     display: none;
   }
   .header__phone {
@@ -8,9 +28,205 @@
     line-height: 45px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 900px) {
+  .header__content-inner {
+    display: block;
+  }
+  .header__content-wrapper {
+    background-position-x: left;
+    background-position-y: top;
+  }
+  .header__content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header__content-popup {
+    padding-top: 40px;
+  }
+  .header__content-popup .popup {
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (max-width: 795px) {
   .header__logo-text {
     display: none;
   }
+  .vacancy__inner {
+    flex-direction: column;
+    align-items: center;
+}
+.vacancy__info-box-title {
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 600;
+  margin: 40px auto 40px auto;
+  text-align: center;
+}
+.vacancy__image-box{
+  margin-right: 0;
+}
 }
 
+@media (max-width: 600px) {
+  .header__logo img {
+    max-width: 195px;
+  }
+  .header__phone {
+    font-size: 24px;
+    line-height: 19px;
+  }
+  .header__phone-box-list li {
+    &:last-child {
+      line-height: 20px;
+      padding-right: 30px;
+      font-size: 17px;
+    }
+    &:first-child::after {
+      right: 0px;
+    }
+  }
+  .header__content-subtitle {
+    font-size: 30px;
+    line-height: 43px;
+  }
+  .header__content-text-title {
+    font-size: 64px;
+    line-height: 87px;
+  }
+  .vacancy__image-box{
+
+    img{
+      max-width: 328px;
+    }
+  }
+  .vacancy__image-box-title{
+    font-size: 20px;
+    line-height: 27px;
+    padding: 16px 24px;
+  }
+  .vacancy__info-box-title{
+    font-size: 26px;
+    line-height: 35px;
+    span{
+      font-size: 15px;
+      line-height: 20px;
+
+    }
+  }
+  .vacancy__info-box-subinfo {
+    font-size: 17px;
+    line-height: 23px;
+    span{
+      font-size: 15px;
+      line-height: 20px;
+      p{
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 500px) {
+  .header__logo img {
+    width: 130px;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  .header__phone-box {
+    padding-top: 24px;
+  }
+  .header__phone-box-list li {
+    line-height: 19px;
+    &:last-child {
+      line-height: 20px;
+      padding-right: 30px;
+      font-size: 14px;
+    }
+    &:first-child::after {
+      right: 0px;
+      top: 5px;
+    }
+  }
+  .header__content-box {
+    padding-top: 95px;
+}
+  .header__content-text-title {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 23px;
+  }
+  .header__content-subtitle {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .header__content-popup .popup-container {
+    max-width: 300px;
+    
+  }
+  .header__content-popup .popup-content {
+    padding: 16px 29px 21px 29px;
+    
+  }
+
+  .header__content-popup .popup-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header__content-popup .popup-subtext {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .header__content-popup .popup__input input {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header__content-popup .popup__btn.btn {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 16px 15px 16px;
+    height: 40px;
+  }
+  .header__content-vacancy{
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .vacancy__image-box-title{
+    font-size: 18px;
+    line-height: 25px;
+    padding: 9px 9px;
+    right: -10px;
+    bottom: -20px;
+  }
+  .vacancy__info-box-title{
+    font-size: 26px;
+    line-height: 35px;
+
+    span{
+      font-size: 14px;
+      line-height: 19px;
+
+    }
+  }
+  .vacancy__info-box-subinfo {
+    font-size: 17px;
+    line-height: 23px;
+    span{
+      font-size: 15px;
+      line-height: 20px;
+      p{
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+  }
+}

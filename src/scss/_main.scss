@@ -1,0 +1,314 @@
+/* Header start */
+.header {
+  &__wrapper {
+    // position: fixed;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    z-index: 5;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo-box {
+    display: flex;
+    max-width: 430px;
+    align-items: center;
+    padding-top: 24px;
+    height: 100%;
+    .header__logo {
+      padding-right: 16px;
+      position: relative;
+      img {
+        max-width: 222px;
+        // height: 63px;
+      }
+      &-text {
+        font-weight: 600;
+        line-height: 24px;
+        padding-left: 17px;
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+  &__phone-box {
+    padding-top: 24px;
+
+    &-list {
+      li {
+        font-size: 30px;
+        line-height: 51px;
+        justify-self: self-start;
+        position: relative;
+        padding-right: 30px;
+        &:last-child {
+          text-align: right;
+          justify-self: self-end;
+          line-height: 25px;
+          padding-right: 30px;
+          font-size: 18px;
+        }
+        &:first-child::after {
+          position: absolute;
+          content: "";
+          background-image: url(../images/icons/V.png);
+          height: 14px;
+          width: 20px;
+          top: 20px;
+          right: 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        a {
+        }
+      }
+    }
+    &.active,
+    &:hover {
+      .header__phone-box-list {
+        background-color: rgba(5, 5, 5, 0.7);
+        padding: 0 10px;
+        border-radius: 10px;
+        li {
+          border-bottom: 1px solid #000;
+          color: #fff;
+          &:nth-child(2) {
+            display: block;
+          }
+          &:first-child {
+            margin-bottom: 7px;
+            // padding-top: 5px;
+          }
+          &:last-child {
+            margin-top: 10px;
+            padding-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+  &__chat-box {
+    padding-top: 15px;
+    padding-left: 63px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 80px;
+      width: 1px;
+      background-color: #fff;
+      top: 24px;
+      left: 0;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      font-size: 30px;
+      line-height: 41px;
+      padding: 5px 28px 10px 28px;
+      a {
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(250, 250, 250, 0.8);
+      }
+      &:hover {
+        background-color: #5fb138;
+      }
+    }
+  }
+}
+/* Header end */
+
+/* Header content start */
+.header__content {
+  &-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+  }
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-box {
+
+    padding-top: 195px;
+  }
+
+  &-text-title {
+    font-size: 64px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #fff;
+  }
+  &-subtitle {
+    font-weight: 400;
+    line-height: 49px;
+    font-size: 36px;
+    max-width: 813px;
+  }
+
+  &-popup {
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    .popup {
+      position: static;
+      background-color: transparent;
+      &-content{
+        margin: 0;
+      }
+      &-text {
+        font-size: 24px;
+      }
+    }
+
+    .popup-text {
+      span {
+      }
+    }
+  }
+  &-vacancy {
+    background: rgba(14, 13, 23, 0.7);
+    text-align: center;
+    padding: 14px 0;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+  }
+}
+
+/* Header content end */
+
+/* vacancy start */
+.vacancy{
+  &__wrapper{
+    padding-top: 35px;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__inner{
+    display: flex;
+
+  }
+  &__image-box{
+    margin-right: 75px;
+    position: relative;
+    height: 100%;
+    img{
+
+    }
+    &-title{
+      position: absolute;
+      background-color: $green;
+      font-size: 26px;
+      line-height: 35px;
+      font-weight: 900;
+      padding: 20px 57px 26px 57px;
+      text-align: center;
+      border-radius: 5px;
+      right: -45px;
+      bottom: -40px;
+    }
+  }
+  &__info-box{
+    &-title{
+      margin-bottom: 38px;
+      font-size: 30px;
+      line-height: 41px;
+      font-weight: 600;
+      span{
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 300;
+        display: block;
+
+      }
+
+    }
+    &-row{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+    &-subinfo{
+      max-width: 320px;
+      padding-left: 55px;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      span{
+        font-size: 15px;
+        line-height: 25px;
+        display: block;
+        p{
+          line-height: 25px;
+        }
+      }
+    }
+    &-subinfo.terms{
+      position: relative;
+      margin-right: 30px;
+      &::before{
+        content: "\f015";
+        font-family: 'icomoon' !important;
+        position: absolute;
+        font-size: 38px;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-subinfo.worktime{
+      position: relative;
+      &::before{
+        content: "\f017";
+        font-family: 'icomoon' !important;
+        position: absolute;
+        font-size: 38px;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-subinfo.food{
+      position: relative;
+      margin-right: 30px;
+      &::before{
+        content: "\f0f5";
+        font-family: 'icomoon' !important;
+        position: absolute;
+        font-size: 38px;
+        top: 0;
+        left: 0;
+
+      }
+    }
+    &-subinfo.salary{
+      position: relative;
+      &::before{
+        content: "\f153";
+        font-family: 'icomoon' !important;
+        position: absolute;
+        font-size: 38px;
+        top: 0;
+        left: 0;
+
+      }
+    }
+  }
+  
+}
+
+/* vacancy end */

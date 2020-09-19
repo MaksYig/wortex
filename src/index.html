@@ -6,58 +6,117 @@
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <meta name="description" content=" " />
     <meta name="keywords" content="" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Wortex</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="site">
-    <main class="site-content" >
-@@include('./_header.html')
+    <main class="site-content">
+      @@include('./_header.html')
 
-<div class="header__content">
-  <div class="header__content-wrapper"style="background-image: url('images/content/header-bg.jpg');">
-    <div class="container__big">
-      <div class="header__content-inner" >
-        <div class="header__content-text">
-          <div class="header__content-text-title">
-            РОБОТА В НІМЕЧЧИНІ
-           <span> Робота для жінок від 18 до 30 років із заробітною платою від 38000 гривень  на місяць.</span>
+    <div class="header__content">
+      <div
+        class="header__content-wrapper"
+        style="background-image: url('images/content/header-bg.jpg')"
+      >
+        <div class="container__big">
+          <div class="header__content-inner">
+            <div class="header__content-box">
+              <div class="header__content-text-title">РОБОТА В НІМЕЧЧИНІ</div>
+              <div class="header__content-subtitle">
+                Робота для жінок від 18 до 30 років із заробітною платою від
+                38000 гривень на місяць.
+              </div>
+            </div>
+            <div class="header__content-popup">
+              <div class="popup" id="popup">
+                <div class="popup-container">
+                  <form class="popup-content">
+                    <div class="popup-text">
+                      Отримайте роботу на складі на 90 днів від 3600 євро
+                      чистими
+                      <p>із комфортним проживанням</p>
+                    </div>
+                    <div class="popup-subtext">
+                      Оплачуйте послуги із розтермінуванням на 3 платежі вже з
+                      нової роботи!
+                    </div>
+                    <div class="popup__input">
+                      <input
+                        data-tel-input
+                        maxlength="13"
+                        type="tel"
+                        placeholder="063-000-00-00"
+                      />
+                      <img src="images/content/input_flag.png" alt="" />
+                    </div>
+                    <button class="popup__btn btn">
+                      Отримати нову роботу!
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="header__content-popup">
-          <div class="popup" id="popup">
-            <div class="popup-container">
-              <form class="popup-content">
-                <div class="popup-text">
-                  Отримайте роботу на складі на 90 днів від 3600 євро чистими
-                  із комфортним проживанням
+        <div class="header__content-vacancy">ДЕТАЛІ ВАКАНСІЇ</div>
+      </div>
+    </div>
+
+    <section class="vacancy">
+      <div class="vacancy__wrapper" style="background-color: rgba(14, 13, 23, 0.7);">
+        <div class="container">
+          <div class="vacancy__inner">
+            <div class="vacancy__image-box">
+              <img src="images/content/vacancy.jpg" alt="">
+              <div class="vacancy__image-box-title">
+               ПРЕЗЕНТАЦІЯ ВАКАНСІЇ
+              </div>
+            </div>
+            <div class="vacancy__info-box">
+              <div class="vacancy__info-box-title">
+                Сортування одягу та косметики на складі
+                <span>Ніяких спеціальних навичок не потрібно. Все автоматизовано. Потрібно буде упаковувати, складати продукцію та готувати до відправки. Надається робочий одяг — безкоштовно. Робоче взуття, яке працівники зможуть зберегти собі після роботи.</span>
+              </div>
+              <div class="vacancy__info-box-row">
+                <div class="vacancy__info-box-subinfo terms ">
+                  Умови проживання:
+                 <span>Оплата: 14,50 Євро на день <p>Проживання по двоє в кімнаті, де є кухня і туалет</p> 
+                 <p>Роботодавець всім допоможе заселитися і придбати місячний проїзний, який коштуватиме 85 Євро.</p> </span> 
                 </div>
-                <div class="popup-subtext">
-                  Оплачуйте послуги із розтермінуванням на 3 платежі вже з нової роботи!
+                <div class="vacancy__info-box-subinfo worktime">
+                 Графік роботи:
+                  <span>8 годин на день = 40 годин на тиждень. <p>Позмінна робота</p> 
+                  <p>Рання зміна: 06:00 — 14:30</p> 
+                  <p>Вечірня зміна: 14:00 — 22:30</p></span>  
                 </div>
-                 <div class="popup__input">
-                  <input data-tel-input maxlength="13" type="tel" placeholder="063-000-00-00" >
-                  <img src="images/content/input_flag.png" alt="">
-                 </div>
-                <button class="popup__btn btn">Отримати нову роботу!</button>
-              </form>
+              </div>
+              <div class="vacancy__info-box-row">
+                <div class="vacancy__info-box-subinfo food">
+                  Харчування:
+                    <span>Харчування відбувається самостійно.</span>  
+                </div>
+                <div class="vacancy__info-box-subinfo salary">
+                  Оплата праці:
+                    <span>Ставка 10,15 євро на годину <p>Оплата здійснюється на картковий рахунок.</p> 
+                    </span>  
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="header__content-vacancy">
-      ДЕТАЛІ ВАКАНСІЇ
-    </div>
-  </div>
-</div>
+    </section>
 
 
 
 
 
-  </main>
-@@include('./_footer.html')
+    </main>
+    @@include('./_footer.html')
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

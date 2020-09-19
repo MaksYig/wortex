@@ -32,6 +32,7 @@ body {
   font-size: 18px;
   color:#fff;
   font-weight: 400;
+  background-color: #000;
 }
 
 .container {
@@ -91,7 +92,7 @@ body {
     position: relative;
     input{
       height: 46px;
-      width: 340px;
+      max-width: 340px;
       background: #0E0D17;
       border-radius: 5px;
       color: #fff;
@@ -114,7 +115,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     height: 66px;
-    width: 339px;
+    max-width: 339px;
     text-align: center;
     border: none;
     // padding: 15px 46px;

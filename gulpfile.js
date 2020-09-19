@@ -101,7 +101,7 @@ function images() {
 
 function fonts(params) {
   return src(path.src.fonts)
-    .pipe(dest(path.build.img))
+    .pipe(dest(path.build.fonts))
     .pipe(browsersync.stream());
 }
 
