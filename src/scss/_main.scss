@@ -61,8 +61,7 @@
         &:nth-child(2) {
           display: none;
         }
-        a {
-        }
+      
       }
     }
     &.active,
@@ -168,10 +167,6 @@
       }
     }
 
-    .popup-text {
-      span {
-      }
-    }
   }
   &-vacancy {
     background: rgba(14, 13, 23, 0.7);
@@ -202,8 +197,6 @@
     margin-right: 75px;
     position: relative;
     height: 100%;
-    img {
-    }
     &-title {
       position: absolute;
       background-color: $green;
@@ -356,8 +349,7 @@
     background-color: #000;
     height: 40px;
     width: 100%;
-    span {
-    }
+
   }
   &__callus-inner {
     .callus__title {
@@ -412,9 +404,7 @@
     padding-top: 55px;
     margin-bottom: 50px;
   }
-  &__inner{
 
-  }
   &__item{
     display: flex;
     align-items: center;
